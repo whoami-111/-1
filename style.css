@@ -37,7 +37,7 @@ form select{
 .todo{
     margin: 1rem;
     background: #ffffff;
-    font-size: 5rem;
+    font-size: 1rem;
     color: black;
     display: flex;
     justify-content: space-between;
@@ -87,7 +87,7 @@ input[type="text"], input.someClass, input#someID {
     height: 45px;
     line-height: 45px;
     border-radius: 45px;
-    margin: 0px 0px;
+    margin: 10px 20px;
     font-family: 'Montserrat',Helvetica;
     font-size: 15px;
     text-align: center;
