@@ -1,0 +1,104 @@
+body{
+    background-image: url("https://i.redd.it/oragaxts0xd61.png");
+}
+
+h1,form{
+    margin: 0.2em;
+    color: #86fc18;
+    font-style: italic;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 58px;
+    line-height: 54px;
+    text-shadow: 2px 5px 0 rgba(0, 0, 0, 0.2);
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input{
+    padding: 0.4rem;
+    font-size: 2rem;
+    border: none;
+
+}
+form select{
+    font-size: 1rem;
+    border: none;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: 1rem;
+    background: #ffffff;
+    font-size: 5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+.filter-todo{
+    padding: 1rem;
+}
+.todo li{
+    flex: 1;
+}
+.trash-btn,
+.complete-btn{
+    background: rgb(235, 37, 11);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.complete-btn{
+    background: #2EE59D;
+}
+.todo-item{
+    padding: 0rem 11rem;
+}
+.fa-times-circle,
+.fa-check-circle{
+    pointer-events: none;
+}
+.fall{
+    transform: translateZ(10rem) rotateX(90deg);
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+input[type="text"], input.someClass, input#someID {
+    border-radius: 40px;
+    width: someValue;
+}
+.floating-button{
+    text-decoration: none;
+    display: inline-block;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 0px 0px;
+    font-family: 'Montserrat',Helvetica;
+    font-size: 15px;
+    text-align: center;
+    color: #443e3e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+.floating-button:hover{
+    background: #2EE59D;
+    box-shadow: 10 15px 2px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-10px);
+}
