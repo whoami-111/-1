@@ -1,10 +1,62 @@
-body{
-    background-image: url("https://i.redd.it/oragaxts0xd61.png");
+body {
+    background: linear-gradient(to right, #1D1B26, #519e64);
 }
-
-h1,form{
+.main{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    animation: anim 2.7s linear infinite;
+}
+@keyframes anim{
+    0%{
+        color: #141414;
+        text-shadow: none;
+    }
+    90%{
+        color: #bdae5d;
+        text-shadow: none;
+    }
+    100%{
+        color: #f3ff08;
+        text-shadow: 0 0 25px #ffff17;
+    }
+}
+span:nth-child(1){
+    animation-delay: 0.3;
+}
+span:nth-child(2){
+    animation-delay: 0.6;
+}
+span:nth-child(3){
+    animation-delay: 0.9;
+}
+span:nth-child(4){
+    animation-delay: 1.2;
+}
+span:nth-child(5){
+    animation-delay: 1.5;
+}
+span:nth-child(6){
+    animation-delay: 1.8;
+}
+span:nth-child(7){
+    animation-delay: 2.1;
+}
+span:nth-child(8){
+    animation-delay: 2.4;
+}
+span:nth-child(9){
+    animation-delay: 2.7;
+}
+form{
     margin: 0.2em;
-    color: #86fc18;
+    color: #ffffff;
     font-style: italic;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 58px;
@@ -36,6 +88,9 @@ form select{
 }
 .todo{
     margin: 1rem;
+    border-radius: 40px;
+    width: someValue;
+    height: 40px;
     background: #ffffff;
     font-size: 1rem;
     color: black;
@@ -52,15 +107,15 @@ form select{
 }
 .trash-btn,
 .complete-btn{
-    background: rgb(235, 37, 11);
-    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #d16b0b, #c4354d);
+    color: rgb(255, 255, 255);
     border: none;
     padding: 0.5rem;
     cursor: pointer;
     font-size: 1rem;
 }
 .complete-btn{
-    background: #2EE59D;
+    background: #5dc5d8;
 }
 .todo-item{
     padding: 0rem 11rem;
@@ -69,8 +124,8 @@ form select{
 .fa-check-circle{
     pointer-events: none;
 }
-.fall{
-    transform: translateX(50rem) rotateZ(-1deg) rotateY(-60deg);
+.fall { /*Поведение при удалении задачи*/
+    transform: translateZ(10rem) rotateX(90deg);
 }
 .completed{
     text-decoration: line-through;
@@ -79,26 +134,75 @@ form select{
 input[type="text"], input.someClass, input#someID {
     border-radius: 40px;
     width: someValue;
+    height: 50px;
 }
-.floating-button{
-    text-decoration: none;
+.post-button{
     display: inline-block;
-    width: 180px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 45px;
-    margin: 10px 20px;
-    font-family: 'Montserrat',Helvetica;
-    font-size: 15px;
-    text-align: center;
-    color: #443e3e;
-    background: white;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
-    transition: .3s;
+    background: #2196f3;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+    cursor: pointer;
+  }
+
+.post-button{
+    background: linear-gradient(to right, #340b36, #c31432);
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 25px;
+    position: relative;
+    transition: all .6s;
 }
-.floating-button:hover{
-    background: #2EE59D;
-    box-shadow: 10 15px 2px rgba(46, 229, 157, .4);
-    color: white;
-    transform: translateY(-10px);
+.post-button:hover{
+    border-radius: 25px 0;
+}
+.post-button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right,#240b36, #c31432);
+    width: 100%;
+    height: 100%;
+    filter: blur(22px);
+    transform: scale(0.9, 0.8) translateY(20px);
+    z-index: -1;
+    opacity: 0;
+    transition: all;
+}
+.post-button:hover::before{
+    opacity: 1;
+}
+ 
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  select {
+    color: #000000;
+    font-family: "Arial", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+  }
+
+  .select::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #000000;
+    cursor: pointer;
+    pointer-events: none;
 }
