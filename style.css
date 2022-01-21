@@ -14,17 +14,21 @@ span{
     animation: anim 2.7s linear infinite;
 }
 @keyframes anim{
-    0%{
-        color: #141414;
+    25%{
+        color: #423d3d;
         text-shadow: none;
     }
-    90%{
+    35%{
+        color: #725d5d;
+        text-shadow: none;
+    }
+    50%{
         color: #bdae5d;
         text-shadow: none;
     }
-    100%{
-        color: #f3ff08;
-        text-shadow: 0 0 25px #ffff17;
+    60%{
+        color: #e7e6db;
+        text-shadow: 0 0 50px #afb1a3;
     }
 }
 span:nth-child(1){
@@ -115,7 +119,7 @@ form select{
     font-size: 1rem;
 }
 .complete-btn{
-    background: #5dc5d8;
+    background: #35cead;
 }
 .todo-item{
     padding: 0rem 11rem;
@@ -125,7 +129,7 @@ form select{
     pointer-events: none;
 }
 .fall { /*Поведение при удалении задачи*/
-    transform: translateZ(10rem) rotateX(90deg);
+    transform: translateX(-60rem);
 }
 .completed{
     text-decoration: line-through;
@@ -138,7 +142,7 @@ input[type="text"], input.someClass, input#someID {
 }
 .post-button{
     display: inline-block;
-    background: #2196f3;
+    background: #9f21f3;
     color: #fff;
     padding: 12px;
     border: none;
