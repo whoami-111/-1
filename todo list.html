@@ -22,27 +22,42 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="index.html">
 </head>
 <body>
-<h1 title="by ASAMBLET"><b>Todo List</b></h1>
+    <br>
+    <div class="main">
+        <span>T</span>
+        <span>o</span>
+        <span>d</span>
+        <span>o</span>
+        <span></span>
+        <span>L</span>
+        <span>i</span>
+        <span>s</span>
+        <span>t</span>
+    </div>
+<br>
 <br>
 <form>  
     <input type="text" class="todo-input" placeholder="Ваша задача..." title="Нажмите на поле">
     <button class="post-button" type="submit" title="Нажмите, для добавления">
-        <a class="floating-button">ДОБАВИТЬ</a>
-    </button>
-    <select name="todos" class="filter-todo" title="Управление пунктами">
-        <option value="all-tasks">Все задачи</option>
-        <option value="completed">Зачеркнутые</option>
-        <option value="not-completed">Не выполненные</option>
-    </select>
+      ДОБАВИТЬ
+    </button><select align-items: center; name="todos" class="filter-todo" title="Управление пунктами">
+    <option value="all-tasks">Все задачи</option>
+    <option value="completed">Зачеркнутые</option>
+    <option value="not-completed">Не выполненные</option>
+    
     <div class="select"></div>
-</form>
+
+</select>
+</form>  
+
+<br>
 <div class="todo-container">
     <ul class="todo-list"></ul>
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
