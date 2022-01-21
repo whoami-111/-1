@@ -70,7 +70,7 @@ form select{
     pointer-events: none;
 }
 .fall{
-    transform: translateZ(10rem) rotateX(90deg);
+    transform: translateY(-30rem) rotateZ(-100deg) rotateZ(-100deg);
 }
 .completed{
     text-decoration: line-through;
