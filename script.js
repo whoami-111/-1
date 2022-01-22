@@ -106,10 +106,11 @@ function getTodos(){
     todos = JSON.parse(localStorage.getItem("todos"));
   }
     todos.forEach(function(todo){
-//сохранение
+//сохранение списка
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo"); 
     todoList.appendChild(todoDiv);
+    todoDiv.classList.add("completed"); 
 //список  
     const newTodo = document.createElement("li");
     newTodo.innerText = todo;
