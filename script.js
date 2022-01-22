@@ -110,6 +110,7 @@ function getTodos(){
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo"); 
     todoList.appendChild(todoDiv);
+//при обновлении страницы - зачеркивает всё
     todoDiv.classList.add("completed"); 
 //список  
     const newTodo = document.createElement("li");
