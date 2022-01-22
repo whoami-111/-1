@@ -2,8 +2,7 @@ body {
     background: linear-gradient(to right, #1D1B26, #519e64);
 }
 .main{
-    font-family: 'Fredericka the Great', cursive;
-    font-style: italic;
+    font-family: 'Cinzel', serif;
     width: 100%;
     height: 10vh;
     display: flex;
@@ -139,7 +138,6 @@ form select{
 }
 input[type="text"], input.someClass, input#someID {
     border-radius: 40px;
-    width: someValue;
     height: 50px;
 }
 .post-button{
