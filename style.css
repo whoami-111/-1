@@ -1,5 +1,8 @@
 body {
     background: linear-gradient(to right, #1D1B26, #519e64);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 .main{
     font-family: 'Cinzel', serif;
@@ -10,7 +13,8 @@ body {
     align-items: center;
 }
 span{
-    font-size: 5rem;
+    font-size: 4rem;
+    min-height: -24vh;
     letter-spacing: 1rem;
     animation: anim 2.7s linear infinite;
 }
@@ -64,10 +68,9 @@ form{
     color: #ffffff;
     font-style: italic;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 58px;
+    font-size: 150px;
     line-height: 54px;
     text-shadow: 2px 5px 0 rgba(0, 0, 0, 0.2);
-    min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,6 +78,7 @@ form{
 form input{
     padding: 0.4rem;
     font-size: 2rem;
+    margin-right: 1%;
     border: none;
 
 }
@@ -134,7 +138,7 @@ form select{
 }
 .completed{
     text-decoration: line-through;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 input[type="text"], input.someClass, input#someID {
     border-radius: 40px;
