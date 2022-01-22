@@ -194,17 +194,10 @@ input[type="text"], input.someClass, input#someID {
  
 .select {
     position: relative;
-    overflow: hidden;
-  }
-  select {
-    color: #000000;
-    font-family: "Arial", sans-serif;
-    cursor: pointer;
-    width: 9rem;
-  }
-
-  .select::after {
-    content: "";
+    overflow: hidden;   
+}
+.select::after {
+    content: "";  
     position: absolute;
     top: 0;
     right: 0;
