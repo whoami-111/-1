@@ -2,6 +2,8 @@ body {
     background: linear-gradient(to right, #1D1B26, #519e64);
 }
 .main{
+    font-family: 'Fredericka the Great', cursive;
+    font-style: italic;
     width: 100%;
     height: 10vh;
     display: flex;
@@ -128,7 +130,7 @@ form select{
 .fa-check-circle{
     pointer-events: none;
 }
-.fall { /*Поведение при удалении задачи*/
+.fall { /*Поведение при удалении  задачи*/
     transform: translateX(-60rem);
 }
 .completed{
@@ -189,7 +191,6 @@ input[type="text"], input.someClass, input#someID {
 }
  
 .select {
-    margin: 1rem;
     position: relative;
     overflow: hidden;
   }
@@ -197,7 +198,7 @@ input[type="text"], input.someClass, input#someID {
     color: #000000;
     font-family: "Arial", sans-serif;
     cursor: pointer;
-    width: 12rem;
+    width: 9rem;
   }
 
   .select::after {
