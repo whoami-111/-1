@@ -105,13 +105,14 @@ function getTodos(){
   } else {
     todos = JSON.parse(localStorage.getItem("todos"));
   }
+  //сохранение списка
     todos.forEach(function(todo){
-//сохранение списка
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo"); 
     todoList.appendChild(todoDiv);
-//при обновлении страницы - зачеркивает всё
     todoDiv.classList.add("completed"); 
+    todoList.appendChild(todoDiv);
+    
 //список  
     const newTodo = document.createElement("li");
     newTodo.innerText = todo;
@@ -128,6 +129,5 @@ function getTodos(){
     trashButton.innerHTML = `<i class="fas fa-times-circle"></i>`;
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
-  
   });
 }
